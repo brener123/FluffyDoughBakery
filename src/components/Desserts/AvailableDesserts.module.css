@@ -1,0 +1,34 @@
+.desserts {
+  max-width: 60rem;
+  width: 90%;
+  margin: 2rem auto;
+  animation: meals-appear 1s ease-out forwards;
+}
+
+.DessertsLoading {
+  text-align: center;
+  color: white;
+}
+
+.DessertsError {
+  text-align: center;
+  color: red;
+}
+
+.desserts ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes desserts-appear {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
