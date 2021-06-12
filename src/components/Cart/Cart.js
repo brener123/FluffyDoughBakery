@@ -29,6 +29,7 @@ const Cart = (props) => {
 
   const submitOrderHandler = async (userData) => {
     setIsSubmitting(true);
+    //submit the order to a server
     await fetch('https://react-http-6b4a6.firebaseio.com/orders.json', {
       method: 'POST',
       body: JSON.stringify({
