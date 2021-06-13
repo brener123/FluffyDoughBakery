@@ -1,7 +1,7 @@
 import { Fragment } from 'react';
 
 import HeaderCartButton from './HeaderCartButton';
-import fluffyImage from '../../assets/FluffyPhoto.jpg';
+import fluffyImage from '../../assets/ThemePhoto.jpg';
 import classes from './Header.module.css';
 
 const Header = (props) => {

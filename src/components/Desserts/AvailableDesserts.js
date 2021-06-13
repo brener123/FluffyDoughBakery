@@ -9,7 +9,7 @@ const DUMMY_DESSERTS = [
   {
     id: 'm1',
     name: 'Apple & Blackberry Crumble',
-    description: 'Best pia you ever tried!',
+    description: 'Best pie you ever tried!',
     price: 22.99,
   },
   {
@@ -27,63 +27,11 @@ const DUMMY_DESSERTS = [
   {
     id: 'm4',
     name: 'Chocolate Caramel Crispy cake',
-    description: 'Melts is your mouth!',
+    description: 'Melts in your mouth!',
     price: 18.99,
   },
 ];
-// const AvailableDesserts = () => {
-//   const [Desserts, setDesserts] = useState([]);
-//   const [isLoading, setIsLoading] = useState(true);
-//   const [httpError, setHttpError] = useState();
 
-//   useEffect(() => {
-//     const fetchDesserts = async () => {
-//       const response = await fetch(
-//         'https://www.theDessertdb.com/api/json/v1/1/filter.php?c=Dessert'
-//       );
-
-//       if (!response.ok) {
-//         throw new Error('Something went wrong!');
-//       }
-
-//       const responseData = await response.json();
-
-//       const loadedDesserts = [];
-
-//       for (const key in responseData) {
-//         loadedDesserts.push({
-//           id: key,
-//           name: responseData[key].name,
-//           description: responseData[key].description,
-//           price: responseData[key].price,
-//         });
-//       }
-
-//       setDesserts(loadedDesserts);
-//       setIsLoading(false);
-//     };
-
-//     fetchDesserts().catch((error) => {
-//       setIsLoading(false);
-//       setHttpError(error.message);
-//     });
-//   }, []);
-
-//   if (isLoading) {
-//     return (
-//       <section className={classes.DessertsLoading}>
-//         <p>Loading...</p>
-//       </section>
-//     );
-//   }
-
-//   if (httpError) {
-//     return (
-//       <section className={classes.DessertsError}>
-//         <p>{httpError}</p>
-//       </section>
-//     );
-//   }
 const AvailableDesserts = () => {
   const DessertsList = DUMMY_DESSERTS.map((Dessert) => (
     <DessertItem
